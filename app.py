@@ -21,4 +21,4 @@ input_data = np.array([age,sex_num,bmi,children,smoker_num]).reshape(1,-1)
 
 prediction = model.predict(input_data)
 
-st.title(f'Insurance Cost: {prediction[0]}')
+st.title(f'Insurance Cost: {round(prediction[0],2)}')
